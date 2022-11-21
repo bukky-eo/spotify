@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spotify/screens/splash_screen.dart';
+import 'package:spotify/screens/auth/intro_info.dart';
+import 'package:spotify/screens/auth/splash_screen.dart';
 
 void main() {
   runApp(const Spotify());
@@ -10,9 +11,9 @@ class Spotify extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: IntroPage(),
     );
   }
 }
