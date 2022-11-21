@@ -30,3 +30,28 @@ class LinearButton extends StatelessWidget {
     );
   }
 }
+
+class Inputs extends StatelessWidget {
+  final String label;
+  final TextEditingController controller;
+  const Inputs({
+    Key? key,
+    required this.label,
+    required this.controller,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      decoration: InputDecoration(
+        fillColor: Colors.white70,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15.0),
+        ),
+        hintStyle: TextStyle(fontSize: 15, color: Colors.grey[800]),
+        hintText: label,
+      ),
+      controller: controller,
+    );
+  }
+}

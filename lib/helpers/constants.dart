@@ -4,6 +4,7 @@ const kGreen = Color(0xff42C83C);
 const kText = Color(0xff414141);
 const kBlackText = Color(0xff383838);
 const kStroke = Color(0xffE8E8E8);
+const kBlue = Color(0xff288CE9);
 const kBackgroundWhite = Color(0xffF2F2F2);
 const kNormalHeading = TextStyle(
     color: Color(0xffDADADA), fontSize: 25, fontWeight: FontWeight.w700);
