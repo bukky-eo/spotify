@@ -13,14 +13,15 @@ class LinearButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(top: 25, left: 65, right: 65, bottom: 25),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(25),
-        color: kGreen,
-      ),
-      child: InkWell(
-        onTap: onTap,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding:
+            const EdgeInsets.only(top: 25, left: 65, right: 65, bottom: 25),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(25),
+          color: kGreen,
+        ),
         child: Text(
           title,
           textAlign: TextAlign.center,

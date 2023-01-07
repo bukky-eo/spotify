@@ -14,6 +14,14 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_native_splash:
   text_divider:
+  firebase_auth:
+  firebase_core:
+  cloud_firestore:
+  api_cache_manager:
+  snippet_coder_utils:
+  google_sign_in:
+  spotify_sdk:
+
 
 dev_dependencies:
   flutter_test:
